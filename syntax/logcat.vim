@@ -23,16 +23,16 @@ let s:levels = [
 function! s:define_color()
   if &background is 'dark'
     highlight default logcatLevelVerbose guifg=Gray   ctermfg=Gray
-    highlight default logcatLevelDebug   guifg=Cyan   ctermfg=Cyan
+    highlight default logcatLevelDebug   guifg=Gray   ctermfg=Gray
     highlight default logcatLevelInfo    guifg=Green  ctermfg=Green
     highlight default logcatLevelWarning guifg=Yellow ctermfg=Yellow
     highlight default logcatLevelError   guifg=Red    ctermfg=Red
   else
     highlight default logcatLevelVerbose guifg=DarkGray   ctermfg=DarkGray
-    highlight default logcatLevelDebug   guifg=DarkCyan   ctermfg=DarkCyan
+    highlight default logcatLevelDebug   guifg=Gray   ctermfg=Gray
     highlight default logcatLevelInfo    guifg=DarkGreen  ctermfg=DarkGreen
     highlight default logcatLevelWarning guifg=DarkYellow ctermfg=DarkYellow
-    highlight default logcatLevelError   guifg=DarkRed    ctermfg=DarkRed
+    highlight default logcatLevelError   guifg=Red    ctermfg=Red
   endif
   highlight default logcatLevelFatal guifg=White ctermfg=White guibg=Red ctermbg=Red
 endfunction
